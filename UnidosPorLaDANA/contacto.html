@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACTO</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: linear-gradient(90deg, rgb(155, 176, 190), rgba(0, 132, 255, 0.853));
+      color: rgb(255, 255, 255);
+      box-shadow: 0 4px 100px rgba(0, 166, 255, 0.3);
+    }
+
+    h1 {
+      margin: 0;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 5px;
+      background-color: rgb(74, 114, 155);
+    }
+
+    li {
+      margin: 0;
+    }
+
+    a {
+      color: white;
+      font-weight: bold;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: block;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: rgba(85, 153, 174, 0.812);
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .recuadro {
+      margin: 20px auto;
+      padding: 20px;
+      border: 2px solid rgb(0, 0, 0);
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      max-width: 600px;
+      box-shadow: 0 4px 7px rgba(0, 0, 0, 0.6);
+    }
+
+    .recuadro h2 {
+      color: rgb(0, 0, 0);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input, .form-group textarea {
+      width: 96%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .form-group input:focus, .form-group textarea:focus {
+      border-color: rgb(25, 94, 162);
+      outline: none;
+    }
+
+    .submit-button {
+      background-color: rgb(74, 114, 155);
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-button:hover {
+      background-color: rgb(35, 52, 74);
+    }
+
+    footer {
+      background-color: rgb(35, 52, 74);
+      padding: 5px;
+      text-align: center;
+      color: white;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+      <h1 style="margin: 0; font-size: 1.8rem;">Unidos por la DANA</h1>
+      <div style="display: flex; align-items: center; gap: 15px;">
+        <a href="login.html" style="text-decoration: none; color: white; background-color: rgb(74, 114, 155); padding: 10px 15px; border-radius: 5px; font-weight: bold;">Iniciar Sesión</a>
+        <a href="registro.html" style="text-decoration: none; color: white; background-color: rgb(74, 114, 155); padding: 10px 15px; border-radius: 5px; font-weight: bold;">Registrarse</a>
+      </div>
+    </div>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="mision.html">Misión</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <div class="recuadro">
+      <h2>FORMULARIO DE CONTACTO</h2>
+      <form action="guardar_contacto.php" method="POST">
+        <div class="form-group">
+          <label for="nombre">Nombre Completo:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Enviar</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Aplicación creada por alumnos de 1DAM</p>
+    <p>Contacto: UnidosDANA@gmail.com</p>
+    <p>Teléfono: 697334675</p>
+    <p>Redes Sociales: @UnidosDANA</p>
+  </footer>
+
+</body>
+</html>

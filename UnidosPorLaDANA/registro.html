@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(90deg, #4a729b, #00a6ff);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    .register-container {
+      background-color: #ffffff;
+      color: #333;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: 350px;
+      text-align: center;
+    }
+
+    .register-container h2 {
+      margin-bottom: 20px;
+    }
+
+    .register-container input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .register-container button {
+      background-color: #4a729b;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 1rem;
+    }
+
+    .register-container button:hover {
+      background-color: #357abd;
+    }
+
+    .register-container p {
+      margin-top: 20px;
+      font-size: 0.9rem;
+    }
+
+    .register-container p a {
+      color: #4a729b;
+      text-decoration: none;
+    }
+
+    .register-container p a:hover {
+      text-decoration: underline;
+    }
+
+    .back-to-top {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      background-color: #4a729b;
+      color: white;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      font-size: 20px;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-to-top:hover {
+      background-color: #357abd;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <a href="index.html" class="back-to-top">
+    <i class="fas fa-arrow-left"></i>
+  </a>
+
+  <div class="register-container">
+    <h2><i class="fas fa-user-circle"></i> Crear cuenta</h2>
+    <form action="index.html" method="post">
+      <input type="text" name="nombre" placeholder="Nombre completo" required>
+      <input type="email" name="email" placeholder="Correo electrónico" required>
+      <input type="password" name="password" placeholder="Contraseña" required>
+      <input type="password" name="confirm-password" placeholder="Confirmar contraseña" required>
+      <button type="submit">Registrarse</button>
+    </form>
+    <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
+  </div>
+
+</body>
+</html>
+
