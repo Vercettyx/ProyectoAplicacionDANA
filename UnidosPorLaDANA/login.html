@@ -96,13 +96,13 @@
 
   <div class="login-container">
     <h2><i class="fas fa-user-circle"></i> Iniciar Sesión</h2>
-    <form action="dashboard.html" method="post">
+    <form action="server.php" method="post">
+      <input type="hidden" name="action" value="login">
       <input type="email" name="email" placeholder="Correo electrónico" required>
       <input type="password" name="password" placeholder="Contraseña" required>
       <button type="submit">Entrar</button>
-      <button style="background-color: #ca3b2e; color: white;">Iniciar sesión con Google</button>
-
-    </form>
+  </form>
+  
     <p>¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
   </div>
 
