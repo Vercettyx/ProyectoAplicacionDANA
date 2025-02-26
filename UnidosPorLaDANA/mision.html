@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios Ofrecidos</title>
+    <title>Servicios y Recursos</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
-<style>
-
+    <style>
     html, body {
       margin: 0;
       padding: 0;
@@ -59,116 +57,154 @@
       background-color: rgb(85, 153, 174, 0.812);;
     }
 
-    .recuadro {
-      margin: 20px auto;
-      padding: 20px;
-      border: 2px solid rgb(0, 0, 0);
-      border-radius: 10px;
-      background-color: #f9f9f9;
-      max-width: 700px;
-      box-shadow: 0 4px 7px rgba(0, 0, 0, 0.6);
-    }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
 
-    .recuadro h2 {
-      color: rgb(0, 0, 0);
-    }
+        .card {
+            background-color: white; 
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
 
-    .recuadro p {
-      line-height: 1;
-      text-align: justify;
-    }
+        .card:hover {
+            transform: translateY(-5px);
+        }
 
-    main {
-      flex: 1;
-    }
+        .card h3 {
+            font-size: 1.2rem;
+            padding: 10px;
+        }
 
-    footer {
-      background-color: rgb(35, 52, 74);
-      padding: 5px;
-      text-align: center;
-      color: white;
-      letter-spacing: 1px;
-    }
+        .card p {
+            padding: 0 15px 15px;
+            font-size: 0.9rem;
+            color: #555;
+        }
 
-  </style>
+        footer {
+            background-color: rgb(35, 52, 74);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        main {
+            flex: 1;
+        }
+
+    </style>
+</head>
 <body>
+
     <header>
+
         <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
     
-            <h1 style="margin: 0; font-size: 1.8rem;">Unidos por la DANA</h1>
-            
-            <div style="display: flex; align-items: center; gap: 15px;">
+          <h1 style="margin: 0; font-size: 1.8rem;">Unidos por la DANA</h1>
+          
+          <div style="display: flex; align-items: center; gap: 15px;">
     
-              <a href="login.html" style="text-decoration: none; color: white; background-color: rgb(74, 114, 155); padding: 10px 15px; border-radius: 5px; font-weight: bold;">Iniciar Sesión</a>
-              <a href="registro.html" style="text-decoration: none; color: white; background-color: rgb(74, 114, 155); padding: 10px 15px; border-radius: 5px; font-weight: bold;">Registrarse</a>
-              
-              <div style="position: relative;">
-
-              </div>
+            <a href="login.html" style="text-decoration: none; color: white; background-color: rgb(74, 114, 155); padding: 10px 15px; border-radius: 5px; font-weight: bold;">Iniciar Sesión</a>
+            <a href="registro.html" style="text-decoration: none; color: white; background-color: rgb(74, 114, 155); padding: 10px 15px; border-radius: 5px; font-weight: bold;">Registrarse</a>
+    
+            <div style="position: relative;">
+    
             </div>
           </div>
+        </div>
+    
         <ul>
           <li><a href="index.html">Inicio</a></li>
+          <li><a href="quienes_somos.html">Quienes Somos</a></li>
           <li><a href="mision.html">Misión</a></li>
           <li><a href="contacto.html">Contacto</a></li>
           <li><a href="maps.html">Mapa</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
         </ul>
       </header>
 
-      <main>
-        <h2 style="text-align: center; margin-top: 20px;">Lista de Servicios Ofrecidos</h2>
-        <div style="display: flex; justify-content: center; margin: 20px;">
-            <table style="width: 80%; border-collapse: collapse; text-align: left;">
-                <thead>
-                    <tr style="background-color: #4a729b; color: white;">
-                        <th style="padding: 10px; border: 1px solid #ddd;">Servicios</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #ddd;">Limpieza de alcantarillado</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #ddd;">Limpieza de casas afectadas</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #ddd;">Reconstrucción de infraestructuras</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #ddd;">Ayuda psicológica a afectados</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #ddd;">Asistencia médica y sanitaria</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #ddd;">Recolección y distribución de alimentos</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #ddd;">Donación de ropa y suministros básicos</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #ddd;">Reubicación temporal de familias</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #ddd;">Gestión de voluntarios</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #ddd;">Reparación de sistemas eléctricos</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border: 1px solid #ddd;">Desinfección de zonas inundadas</td>
-                    </tr>
-                </tbody>
-            </table>
+    <h2 style="text-align: center; margin-top: 20px;">Nuestros Servicios y Recursos</h2>
+
+    <div class="container">
+        <a href="tienda.html" style="text-decoration: none; color: inherit;">
+        <div class="card">
+            <h3>Limpieza de alcantarillado</h3>
+            <p>Servicio de limpieza y desbloqueo de alcantarillas afectadas por la DANA.</p>
         </div>
-    </main>
+        </a>
+
+        <a href="tienda.html" style="text-decoration: none; color: inherit;">
+        <div class="card">
+            <h3>Limpieza de casas</h3>
+            <p>Restauración y limpieza de hogares dañados por inundaciones.</p>
+        </div>
+
+        <a href="tienda.html" style="text-decoration: none; color: inherit;">
+        <div class="card">
+            <h3>Reconstrucción</h3>
+            <p>Ayuda en la reconstrucción de caminos y edificaciones afectadas.</p>
+        </div>
+
+        <a href="tienda.html" style="text-decoration: none; color: inherit;">
+            <div class="card">
+            <h3>Apoyo psicológico</h3>
+            <p>Atención psicológica para víctimas de la catástrofe.</p>
+        </div>
+
+        <a href="tienda.html" style="text-decoration: none; color: inherit;">
+            <div class="card">
+            <h3>Distribución de alimentos</h3>
+            <p>Entrega de alimentos y agua potable a los afectados.</p>
+        </div>
+
+        <a href="tienda.html" style="text-decoration: none; color: inherit;">
+            <div class="card">
+            <h3>Donación de ropa</h3>
+            <p>Recogida y entrega de ropa y materiales esenciales.</p>
+        </div>
+
+        <a href="tienda.html" style="text-decoration: none; color: inherit;">
+        <div class="card">
+            <h3>Reubicación de familias</h3>
+            <p>Alojamientos temporales para afectados sin vivienda.</p>
+        </div>
+
+        <a href="tienda.html" style="text-decoration: none; color: inherit;">
+            <div class="card">
+            <h3>Gestión de voluntarios</h3>
+            <p>Organización de voluntarios para ayudar en las zonas afectadas.</p>
+        </div>
+
+        <a href="tienda.html" style="text-decoration: none; color: inherit;">
+            <div class="card">
+            <h3>Reparación de electricidad</h3>
+            <p>Restauración de conexiones eléctricas en zonas afectadas.</p>
+        </div>
+
+        <a href="tienda.html" style="text-decoration: none; color: inherit;">
+            <div class="card">
+            <h3>Desinfección</h3>
+            <p>Eliminación de residuos y bacterias en áreas inundadas.</p>
+        </div>
+      </div>
 
     <footer>
         <p>&copy; Aplicación creada por alumnos de 1DAM</p>
         <p>Contacto: UnidosDANA@gmail.com</p>
         <p>Teléfono: 697334675</p>
         <p>Redes Sociales: @UnidosDANA</p>
-      </footer>
+    </footer>
 
 </body>
 </html>

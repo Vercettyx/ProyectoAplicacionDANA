@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unidos por la DANA - Tienda</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: linear-gradient(90deg, rgb(155, 176, 190), rgba(0, 132, 255, 0.853));
+      color: rgb(255, 255, 255);
+      box-shadow: 0 4px 100px rgba(0, 166, 255, 0.3);
+    }
+
+    h1 {
+      margin: 0;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 5px;
+      background-color: rgb(74, 114, 155);
+    }
+
+    li {
+      margin: 0;
+    }
+
+    a {
+      color: white;
+      font-weight: bold;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: block;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: rgb(85, 153, 174, 0.812);;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 15px;
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .product h3 {
+      margin: 10px 0;
+      font-size: 1.2rem;
+    }
+
+    .product p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .product button {
+      background: rgb(74, 114, 155);
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    .product button:hover {
+      background: rgb(60, 100, 140);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgb(35, 52, 74);
+      color: white;
+      margin-top: 20px;
+    }
+
+    main {
+      flex: 1;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+
+      <h1 style="margin: 0; font-size: 1.8rem;">Unidos por la DANA</h1>
+      
+      <div style="display: flex; align-items: center; gap: 15px;">
+
+        <a href="login.html" style="text-decoration: none; color: white; background-color: rgb(74, 114, 155); padding: 10px 15px; border-radius: 5px; font-weight: bold;">Iniciar Sesión</a>
+        <a href="registro.html" style="text-decoration: none; color: white; background-color: rgb(74, 114, 155); padding: 10px 15px; border-radius: 5px; font-weight: bold;">Registrarse</a>
+
+        <div style="position: relative;">
+
+        </div>
+      </div>
+    </div>
+
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quienes_somos.html">Quienes Somos</a></li>
+      <li><a href="mision.html">Misión</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="maps.html">Mapa</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+    </ul>
+  </header>
+  <main class="container">
+    <div class="product">
+      <h3>Distribución de alimentos</h3>
+      <p>Entrega de alimentos y agua potable a los afectados.</p>
+      <p><strong>5 tk</strong></p>
+      <button>Solicitar</button>
+    </div>
+    <div class="product">
+      <h3>Asistencia medica</h3>
+      <p>Acuden a tu domicilio para cualquier tipo de ayuda.</p>
+      <p><strong>10 tk</strong></p>
+      <button>Solicitar</button>
+    </div>
+    <div class="product">
+      <h3>Ropa</h3>
+      <p>Se reparte todo tipo de prenda que a sido donada.</p>
+      <p><strong>15 tk</strong></p>
+      <button>Solicitar</button>
+    </div>
+    <div class="product">
+      <h3>Limpieza de alcantarillado</h3>
+      <p>Llegan al punto afectado y limpia el alcantarillado.</p>
+      <p><strong>15 tk</strong></p>
+      <button>Solicitar</button>
+    </div>
+    <div class="product">
+      <h3>Servicio de limpieza</h3>
+      <p>Llegan los servicios al punto afectado con productos de limpieza.</p>
+      <p><strong>15 tk</strong></p>
+      <button>Solicitar</button>
+    </div>
+    <div class="product">
+      <h3>Reparación de sistemas eléctronicos</h3>
+      <p>Si tienes algun dispositivo dañado los tecnicos harán lo posible para arreglarlo</p>
+      <p><strong>20 tk</strong></p>
+      <button>Solicitar</button>
+    </div>
+    <div class="product">
+      <h3>Reconstrucción</h3>
+      <p>Ayuda en la reconstrucción de caminos y edificaciones afectadas.</p>
+      <p><strong>20 tk</strong></p>
+      <button>Solicitar</button>
+    </div>
+    <div class="product">
+      <h3>Reubicación de familias</h3>
+      <p>Alojamientos temporales para afectados sin vivienda.</p>
+      <p><strong>20 tk</strong></p>
+      <button>Solicitar</button>
+    </div>
+    <div class="product">
+      <h3>Desinfección</h3>
+      <p>Eliminación de residuos y bacterias en áreas inundadas.</p>
+      <p><strong>20 tk</strong></p>
+      <button>Solicitar</button>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; Aplicación creada por alumnos de 1DAM</p>
+    <p>Contacto: UnidosDANA@gmail.com</p>
+    <p>Teléfono: 697334675</p>
+    <p>Redes Sociales: @UnidosDANA</p>
+  </footer>
+</body>
+</html>
